@@ -51,3 +51,27 @@ body {
     min-height: 100vh;
     text-align: center;
 }
+.panel {
+    position: fixed;
+    z-index: 998;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--second-modal-color);
+}
+.panel-btn {
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    right: 1vw;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    /* color: var(--second-color); */
+}
