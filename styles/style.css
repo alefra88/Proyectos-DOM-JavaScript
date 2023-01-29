@@ -1,3 +1,4 @@
+/* PRIMERO EJERCICIO */
 /* RESET */
 :root {
     --main-font: sans-serif;
@@ -133,3 +134,6 @@ button.panel-btn {
     color: var(--second-color);
     background-color: var(--main-modal-color);
 }
+
+
+/* SEGUNDO EJERCICIO */
