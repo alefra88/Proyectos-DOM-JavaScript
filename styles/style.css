@@ -86,6 +86,7 @@ video {
     /* transform: translate(100%, 0); */
     /* izquierda */
     /* transform: translate(-100%, 0); */
+    visibility: hidden;
 }
 .panel.is-active {
     transform: translate(0, 0);
