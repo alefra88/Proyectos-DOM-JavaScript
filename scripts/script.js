@@ -5,4 +5,9 @@ const d = document;
 d.addEventListener("DOMContentLoaded", (e) => {
     hamburguerMenu(".panel-btn", ".panel", ".menu a");
     digitalClock("#reloj", "#activar-reloj", "#desactivar-reloj");
+    alarm(
+        "assets/TrololoChiptune.mp3",
+        "#activar-alarma",
+        "#desactivar-alarma"
+    );
 });
