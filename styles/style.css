@@ -5,7 +5,7 @@
     --main-color: #f7df1e;
     --second-color: #222;
     --main-modal-color: rgba(247, 222, 30, 0.85);
-    --second-modal-color: rgba(34, 34, 34, 0, 85);
+    --second-modal-color: rgba(34, 34, 0, 0.85);
     --container-width: 1200px;
 }
 
@@ -25,6 +25,17 @@ html {
 body {
     margin: 0;
     overflow-x: hidden;
+}
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+.flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* MENU HAMBURGUESA */
@@ -66,8 +77,15 @@ body {
     right: 0;
     left: 0;
     background-color: var(--second-modal-color);
+    transition: transform .3s ease;
+    transform: translate(0, -100%);
 }
-.panel-btn {
+.panel.is-active {
+    transform: translate(0, 0);
+    opacity: 1;
+    visibility: visible;
+}
+button.panel-btn {
     position: fixed;
     z-index: 999;
     bottom: 1vh;
@@ -79,7 +97,30 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:var(--main-color);
+    background-color: var(--main-color);
 }
 
+.menu {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
 
+.menu a {
+    padding: 2rem;
+    width: inherit;
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--main-color);
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    font-weight: bold;
+    color: var(--second-color);
+    background-color: var(--main-modal-color);
+}
