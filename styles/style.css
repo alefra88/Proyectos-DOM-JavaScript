@@ -77,14 +77,22 @@ video {
     right: 0;
     left: 0;
     background-color: var(--second-modal-color);
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
+    /* de arriba */
     transform: translate(0, -100%);
+    /* de abajo */
+    /* transform: translate(0, 100%); */
+    /* derecha */
+    /* transform: translate(100%, 0); */
+    /* izquierda */
+    /* transform: translate(-100%, 0); */
 }
 .panel.is-active {
     transform: translate(0, 0);
     opacity: 1;
     visibility: visible;
 }
+
 button.panel-btn {
     position: fixed;
     z-index: 999;
