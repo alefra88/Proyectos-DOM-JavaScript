@@ -29,31 +29,34 @@ export function moveBall(e, ball, stage) {
     console.log(e.keyCode);
     console.log(e.key);
     console.log(limitsBall, limitsStage);
-    // const move = (direction) => {};
     switch (e.keyCode) {
         //arriba
         case 38:
-            e.preventDefault();
-            if (limitsBall.top > limitsStage.top) y--;
-            // move("up");
+            if (limitsBall.top > limitsStage.top) {
+                e.preventDefault();
+                y--;
+            }
             break;
         //abajo
         case 40:
-            e.preventDefault();
-            if (limitsBall.bottom < limitsStage.bottom) y++;
-            // move("down");
+            if (limitsBall.bottom < limitsStage.bottom) {
+                e.preventDefault();
+                y++;
+            }
             break;
         //izquierda
         case 37:
-            e.preventDefault();
-            if (limitsBall.left > limitsStage.left) x--;
-            // move("left");
+            if (limitsBall.left > limitsStage.left) {
+                e.preventDefault();
+                x--;
+            }
             break;
         //derecha
         case 39:
-            e.preventDefault();
-            if (limitsBall.right < limitsStage.right) x++;
-            // move("right");
+            if (limitsBall.right < limitsStage.right) {
+                e.preventDefault();
+                x++;
+            }
             break;
         default:
             break;
