@@ -1,6 +1,7 @@
 import hamburguerMenu from "./hamburguer_menu.js";
 import { digitalClock, alarm } from "./reloj.js";
 import { moveBall, shortcuts } from "./teclado.js";
+import countdown from "./cuentaRegresiva.js";
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
@@ -11,6 +12,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
         "#activar-alarma",
         "#desactivar-alarma"
     );
+    countdown("countdown", "Jan 13,2024 00:00:00", "Feliz cumpleaños Alan");
 });
 
 d.addEventListener("keydown", (e) => {
