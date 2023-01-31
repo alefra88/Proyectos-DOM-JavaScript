@@ -1,7 +1,7 @@
 import hamburguerMenu from "./hamburguer_menu.js";
 import { digitalClock, alarm } from "./reloj.js";
 import { moveBall, shortcuts } from "./teclado.js";
-import countdown from "./cuentaRegresiva.js";
+import countdown from "./cuenta_regresiva.js";
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
