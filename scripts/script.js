@@ -16,10 +16,11 @@ d.addEventListener("DOMContentLoaded", (e) => {
     );
     countdown("countdown", "Jan 13,2024 00:00:00", "Feliz cumpleaños Alan");
     scrollTopButton(".scroll-top-btn");
-    darkTheme(".dark-theme-btn","dark-mode")
 });
 
 d.addEventListener("keydown", (e) => {
     shortcuts(e);
     moveBall(e, ".ball", ".stage");
 });
+
+darkTheme(".dark-theme-btn", "dark-mode");
