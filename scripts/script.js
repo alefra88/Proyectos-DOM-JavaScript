@@ -35,7 +35,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
     );
     responsiveTester("responsive-tester");
     userDevice("user-device");
-    webCam("webcam");
+    webCam("webcamContainer", "#activateWebCam");
 });
 
 d.addEventListener("keydown", (e) => {

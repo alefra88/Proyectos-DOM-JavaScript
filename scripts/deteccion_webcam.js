@@ -1,22 +1,28 @@
 const d = document,
     n = navigator;
-export default function webCam(id) {
-    const $video = d.getElementById(id);
-    // console.log(n.mediaDevices.getUserMedia)
-    if (n.mediaDevices.getUserMedia) {
-        n.mediaDevices
-            .getUserMedia({ video: true, audio: false })
-            .then((stream) => {
-                console.log(stream);
-                $video.srcObject = stream;
-                $video.play();
-            })
-            .catch((err) => {
-                $video.insertAdjacentHTML(
-                    "beforebegin",
-                    `<p><mark>${err}</mark></p>`
-                );
-                console.log(`¡Sucediò el siguiente error!:${err}`);
-            });
-    }
-}
+const webCam = (id, playButton) => {
+    const $container = d.getElementById(id),
+        $playButton = d.querySelector(playButton),
+        $video = d.createElement("video");
+    d.addEventListener("click", (e) => {
+        if (e.target.matches(playButton)) {
+            if (n.mediaDevices.getUserMedia) {
+                n.mediaDevices
+                    .getUserMedia({ video: true, audio: false })
+                    .then((stream) => {
+                        // console.log(stream)
+                        $container.appendChild($video);
+                        $video.srcObject = stream;
+                        $video.play();
+                        $playButton.disabled = true;
+                    })
+                    .catch((err) => {
+                        // $container.insertAdjacentHTML('beforebegin', `<p>Sucedió el siguiente error: ${err}</p>`);
+                        // console.log(`Sucedió el siguiente error: ${err}`)
+                    });
+            }
+        }
+    });
+    // console.log(n.mediaDevices.getUserMedia);
+};
+export default webCam;
