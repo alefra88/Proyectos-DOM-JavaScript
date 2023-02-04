@@ -10,19 +10,16 @@ const webCam = (id, playButton) => {
                 n.mediaDevices
                     .getUserMedia({ video: true, audio: false })
                     .then((stream) => {
-                        // console.log(stream)
                         $container.appendChild($video);
                         $video.srcObject = stream;
                         $video.play();
                         $playButton.disabled = true;
                     })
-                    .catch(() => {
-                        // $container.insertAdjacentHTML('beforebegin', `<p>Sucedió el siguiente error: ${err}</p>`);
-                        // console.log(`Sucedió el siguiente error: ${err}`)
+                    .catch((err) => {
+                        console.log(err);
                     });
             }
         }
     });
-    // console.log(n.mediaDevices.getUserMedia);
 };
 export default webCam;

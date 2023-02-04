@@ -20,6 +20,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
         "#activar-alarma",
         "#desactivar-alarma"
     );
+    webCam("webcamContainer", "#activateWebCam");
     countdown("countdown", "Jan 13,2024 00:00:00", "Feliz cumpleaños Alan");
     scrollTopButton(".scroll-top-btn");
     responsiveMedia(
@@ -36,7 +37,6 @@ d.addEventListener("DOMContentLoaded", (e) => {
     );
     responsiveTester("responsive-tester");
     userDevice("user-device");
-    webCam("webcamContainer", "#activateWebCam");
 });
 
 d.addEventListener("keydown", (e) => {
