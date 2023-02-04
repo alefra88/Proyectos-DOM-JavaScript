@@ -16,6 +16,6 @@ export default function networkStatus() {
         d.body.insertAdjacentElement("afterbegin", $div);
         setTimeout(() => d.body.removeChild($div), 1000);
     };
-    w.addEventListener("online", (e) => isOnline());
-    w.addEventListener("offline", (e) => isOnline());
+    w.addEventListener("online", () => isOnline());
+    w.addEventListener("offline", () => isOnline());
 }

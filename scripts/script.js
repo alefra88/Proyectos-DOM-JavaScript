@@ -9,6 +9,7 @@ import responsiveTester from "./pruebaResponsive.js";
 import userDevice from "./deteccion_dispositivos.js";
 import networkStatus from "./deteccion_de_estado.js";
 import webCam from "./deteccion_webcam.js";
+import getPosition from "./geolocalizacion.js";
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
@@ -45,3 +46,4 @@ d.addEventListener("keydown", (e) => {
 
 darkTheme(".dark-theme-btn", "dark-mode");
 networkStatus();
+getPosition("gl_position", "#getPosButton");
