@@ -10,6 +10,7 @@ import userDevice from "./deteccion_dispositivos.js";
 import networkStatus from "./deteccion_de_estado.js";
 import webCam from "./deteccion_webcam.js";
 import getPosition from "./geolocalizacion.js";
+import searchFilters from "./filtro_busquedas.js";
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
@@ -21,6 +22,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
         "#desactivar-alarma"
     );
     webCam("webcamContainer", "#activateWebCam");
+    searchFilters(".card-filter",".card")
     countdown("countdown", "Jan 13,2024 00:00:00", "Feliz cumpleaños Alan");
     scrollTopButton(".scroll-top-btn");
     responsiveMedia(

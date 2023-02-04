@@ -29,7 +29,7 @@ const getPosition = (id, actionButton)=> {
           d.createTextNode(`Longitud: ${position.coords.longitude}`),
           d.createTextNode(`Precisión: ${Math.floor(position.coords.accuracy)} metros`),
          ];
-         console.log(pos);
+        //  console.log(pos);
          pos.forEach((el)=>{
           let newLi = d.createElement('li');
           newLi.appendChild(el);
