@@ -16,7 +16,7 @@ const webCam = (id, playButton) => {
                         $video.play();
                         $playButton.disabled = true;
                     })
-                    .catch((err) => {
+                    .catch(() => {
                         // $container.insertAdjacentHTML('beforebegin', `<p>Sucedió el siguiente error: ${err}</p>`);
                         // console.log(`Sucedió el siguiente error: ${err}`)
                     });
