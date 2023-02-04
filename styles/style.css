@@ -241,7 +241,7 @@ button.panel-btn {
     color: var(--main-color);
     transition: all 0.3s ease-out;
     border-radius: 10%;
-    box-shadow: 0px 10px 17px -2px rgba(0,0,0,0.72);
+    box-shadow: 0px 10px 17px -2px rgba(0, 0, 0, 0.72);
 }
 
 .card img {
@@ -255,5 +255,8 @@ button.panel-btn {
 }
 
 .filter {
-    display: none;
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    order: 1;
 }
