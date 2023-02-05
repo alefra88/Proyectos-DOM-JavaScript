@@ -270,3 +270,10 @@ button.panel-btn {
     width: 250px;
     height: 200px;
 }
+
+.selected {
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    order: 1;
+}
