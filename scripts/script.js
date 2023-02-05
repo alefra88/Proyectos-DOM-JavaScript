@@ -11,18 +11,16 @@ import networkStatus from "./deteccion_de_estado.js";
 import webCam from "./deteccion_webcam.js";
 import getPosition from "./geolocalizacion.js";
 import searchFilters from "./filtro_busquedas.js";
+import draw from "./sorteo.js";
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
     hamburguerMenu(".panel-btn", ".panel", ".menu a");
     digitalClock("#reloj", "#activar-reloj", "#desactivar-reloj");
-    alarm(
-        "assets/mfdoom.mp3",
-        "#activar-alarma",
-        "#desactivar-alarma"
-    );
+    alarm("assets/mfdoom.mp3", "#activar-alarma", "#desactivar-alarma");
     webCam("webcamContainer", "#activateWebCam");
-    searchFilters(".card-filter",".card")
+    searchFilters(".card-filter", ".card");
+    draw("#winner-btn", ".player");
     countdown("countdown", "Jan 13,2024 00:00:00", "Feliz cumpleaños Alan");
     scrollTopButton(".scroll-top-btn");
     responsiveMedia(

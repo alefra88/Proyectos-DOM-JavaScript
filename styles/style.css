@@ -260,3 +260,13 @@ button.panel-btn {
     opacity: 0;
     order: 1;
 }
+
+/* SORTEO DIGITAL */
+.players {
+    list-style: none;
+}
+
+.players li img {
+    width: 250px;
+    height: 200px;
+}
