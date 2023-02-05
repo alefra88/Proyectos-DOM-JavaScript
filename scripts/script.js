@@ -11,7 +11,7 @@ import networkStatus from "./deteccion_de_estado.js";
 import webCam from "./deteccion_webcam.js";
 import getPosition from "./geolocalizacion.js";
 import searchFilters from "./filtro_busquedas.js";
-import draw from "./sorteo.js";
+import draw from "./randomizer.js";
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
