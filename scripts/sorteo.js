@@ -19,7 +19,6 @@
 
 // export default draw;
 
-
 // const d = document;
 
 // const draw = (btn, selector) => {
@@ -55,12 +54,17 @@ const draw = (btn, selector) => {
     d.addEventListener("click", (e) => {
         if (e.target.matches(btn)) {
             let winner = getWinner(selector);
-            d.querySelectorAll(selector).forEach(player => {
+            d.querySelectorAll(selector).forEach((player) => {
                 player.classList.add("selected");
                 if (player === winner) {
                     player.classList.remove("selected");
                 }
             });
+            setTimeout(() => {
+                d.querySelectorAll(selector).forEach((player) => {
+                    player.classList.remove("selected");
+                });
+            }, 4000);
         }
     });
 };
