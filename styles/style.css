@@ -261,7 +261,7 @@ button.panel-btn {
     order: 1;
 }
 
-/* SORTEO DIGITAL */
+/* OBTENER LENGUAJE */
 .players {
     list-style: none;
 }
@@ -276,4 +276,14 @@ button.panel-btn {
     visibility: hidden;
     opacity: 0;
     order: 1;
+}
+#winner-btn:hover {
+    cursor: pointer;
+}
+/* *** RESPONSIVE SLIDER *** */
+.slider {
+    position: relative;
+    width: 80%;
+    margin: 1rem auto;
+    text-align: center;
 }
