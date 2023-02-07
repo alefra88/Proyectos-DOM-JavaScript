@@ -13,6 +13,7 @@ import getPosition from "./geolocalizacion.js";
 import searchFilters from "./filtro_busquedas.js";
 import draw from "./randomizer.js";
 import slider from "./carousel.js";
+import scrollSpy from "./scrollSpy.js";
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
@@ -22,7 +23,8 @@ d.addEventListener("DOMContentLoaded", (e) => {
     webCam("webcamContainer", "#activateWebCam");
     searchFilters(".card-filter", ".card");
     draw("#winner-btn", ".player");
-    
+    slider();
+    scrollSpy();
     countdown("countdown", "Jan 13,2024 00:00:00", "Feliz cumpleaños Alan");
     scrollTopButton(".scroll-top-btn");
     responsiveMedia(
@@ -49,4 +51,4 @@ d.addEventListener("keydown", (e) => {
 darkTheme(".dark-theme-btn", "dark-mode");
 networkStatus();
 getPosition("gl_position", "#getPosButton");
-slider();
+
