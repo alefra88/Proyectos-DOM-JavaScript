@@ -5,7 +5,7 @@ const scrollSpy = () => {
         entries.forEach((entry) => {
             // console.log("entry");
             const id = entry.target.getAttribute("id");
-            console.log(id);
+            // console.log(id);
             if (entry.isIntersecting) {
                 d.querySelector(
                     `a[data-scroll-spy][href="#${id}"]`

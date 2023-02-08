@@ -14,6 +14,7 @@ import searchFilters from "./filtro_busquedas.js";
 import draw from "./randomizer.js";
 import slider from "./carousel.js";
 import scrollSpy from "./scrollSpy.js";
+import smartVideo from "./videoDom.js";
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
@@ -25,6 +26,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
     draw("#winner-btn", ".player");
     slider();
     scrollSpy();
+    smartVideo();
     countdown("countdown", "Jan 13,2024 00:00:00", "Feliz cumpleaños Alan");
     scrollTopButton(".scroll-top-btn");
     responsiveMedia(
