@@ -36,7 +36,7 @@
                 ><a href="#section10" data-scroll-spy>Filtro de Busqueda</a
                 ><a href="#section11" data-scroll-spy>Selecciòn al azàr</a
                 ><a href="#section12" data-scroll-spy>Responsive Slider</a
-                ><a href="#section13" data-scroll-spy>Resposive Video</a><a href="#section14" data-scroll-spy>Seccion 14</a><a href="#section15" data-scroll-spy>Seccion 15</a>    
+                ><a href="#section13" data-scroll-spy>Resposive Video</a><a href="#section14" data-scroll-spy>Validacion de formulario</a><a href="#section15" data-scroll-spy>Seccion 15</a>    
             </nav>
         </aside>
         <main>
@@ -351,10 +351,25 @@
                 <video src="assets/mfdoomvideo2.mp4" muted controls loop data-smart-video></video>
             </section>
             <section id="section14" class="section" data-scroll-spy>
-                <h2>seccion 14</h2>
+                <h2>Validación de formulario</h2>
+                <form class="contact-form">
+                    <legend>Envíanos tus comentarios</legend>
+                    <input type="text" name="name" placeholder="Escribe tu nombre" title="El nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                    <input type="email" required placeholder="Escribe tu email" name="email" title="Email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
+                    <input type="text" name="subject" placeholder="Asunto a tratar" required>
+                    <textarea name="comments" cols="50" rows="5" placeholder="Escribe tus comentarios" data-pattern="^.{1,255}$" title="Tu comentario no debe exceder los 255 caracteres" required></textarea>
+                    <input type="submit" value="enviar">
+                    <div class="contac-form-loader none">
+                        <img src="assets/loader.svg" alt="cargando">
+                    </div>
+                    <div class="contact-form-response none">
+                        <p>Los datos se han enviado</p>
+                    </div>
+                </form>
             </section>
             <section id="section15" class="section" data-scroll-spy>
-                <h2>seccion 15</h2>
+                <h2>Seccion 15</h2>
+                
             </section>
         </main>
         <!-- boton para scrolear -->
