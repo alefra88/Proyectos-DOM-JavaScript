@@ -15,6 +15,7 @@ import draw from "./randomizer.js";
 import slider from "./carousel.js";
 import scrollSpy from "./scrollSpy.js";
 import smartVideo from "./videoDom.js";
+import contactFormVal from "./validaciones_formulario.js";
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
@@ -27,6 +28,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
     slider();
     scrollSpy();
     smartVideo();
+    contactFormVal();
     countdown("countdown", "Jan 13,2024 00:00:00", "Feliz cumpleaños Alan");
     scrollTopButton(".scroll-top-btn");
     responsiveMedia(
@@ -53,4 +55,3 @@ d.addEventListener("keydown", (e) => {
 darkTheme(".dark-theme-btn", "dark-mode");
 networkStatus();
 getPosition("gl_position", "#getPosButton");
-
