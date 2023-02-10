@@ -34,6 +34,23 @@ const contactFormVal = () => {
             }
         }
     });
+    // logica para enviar formulario sin peticion a un servidor
+    d.addEventListener("submit", (e) => {
+        // e.preventDefault();
+        alert("Enviando formulario");
+        const $loader = d.querySelector(".contact-form-loader"),
+            $response = d.querySelector(".contact-form-response");
+        $loader.classList.remove("none");
+
+        setTimeout(() => {
+            $loader.classList.add("none");
+            $response.classList.remove("none");
+            $form.reset();
+            setTimeout(() => {
+                $response.classList.add("none");
+            }, 3000);
+        }, 3000);
+    });
 };
 
 export default contactFormVal;
