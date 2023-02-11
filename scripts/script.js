@@ -16,6 +16,7 @@ import slider from "./carousel.js";
 import scrollSpy from "./scrollSpy.js";
 import smartVideo from "./videoDom.js";
 import contactFormVal from "./validaciones_formulario.js";
+import speechReader from "./narrador.js";
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
@@ -55,3 +56,4 @@ d.addEventListener("keydown", (e) => {
 darkTheme(".dark-theme-btn", "dark-mode");
 networkStatus();
 getPosition("gl_position", "#getPosButton");
+speechReader();
