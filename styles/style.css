@@ -4,7 +4,7 @@
     --main-font: sans-serif;
     --font-size: 16px;
     --main-color: #f7df1e;
-    --second-color: #222;
+    --second-color: #0a0202;
     --main-modal-color: rgba(247, 222, 30, 0.85);
     --second-modal-color: rgba(34, 34, 0, 0.85);
     --container-width: 1200px;
@@ -518,4 +518,24 @@ button.panel-btn {
         visibility: visible;
         opacity: 1;
     }
+}
+
+/* --- N  A  R  R  A  D  O  R  ---  */
+
+#section15 > * {
+    padding: 0.7rem;
+    margin: 1rem auto;
+    display: block;
+    width: 50%;
+    font-family: var(--main-font);
+}
+
+#section15 #speech-select {
+    width: 30%;
+    padding: 0.5rem;
+}
+
+#section15 #speech-btn {
+    width: 10%;
+    padding: 0.3rem;
 }
