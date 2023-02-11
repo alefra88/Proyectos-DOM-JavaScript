@@ -70,7 +70,7 @@ const slider = () => {
                     i = 0;
                 }
                 $slides[i].classList.add("active");
-                intervalId = setTimeout(arguments.callee, 3000);
+                intervalId = setTimeout(arguments.calle, 3000);
             }, 3000);
         }
     });
@@ -81,7 +81,7 @@ const slider = () => {
             i = 0;
         }
         $slides[i].classList.add("active");
-        intervalId = setTimeout(arguments.callee, 3000);
+        intervalId = setTimeout(slider, 3000);
     }, 3000);
 };
 

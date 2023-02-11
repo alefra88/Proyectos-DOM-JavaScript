@@ -53,9 +53,9 @@ export default function userDevice(id) {
     if (isBrowser.firefox()) {
         $id.innerHTML += `<p><mark>Este contenido solo se ve en Firefox</mark></p>`;
     }
-    if (isBrowser.linux()) {
-        $id.innerHTML += `<p><mark>Descarga nuestra app para linux</mark></p>`;
-    }
+    // if (isBrowser.linux()) {
+    //     $id.innerHTML += `<p><mark>Descarga nuestra app para linux</mark></p>`;
+    // }
     // Redirecciones
     if (isMobile.android()) {
         window.location.href = "https.//github.com/alefra88";
