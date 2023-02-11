@@ -81,6 +81,7 @@ const slider = () => {
             i = 0;
         }
         $slides[i].classList.add("active");
+        clearTimeout(intervalId);
         intervalId = setTimeout(slider, 3000);
     }, 3000);
 };
