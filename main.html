@@ -4,11 +4,11 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./styles/style.css" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
         />
+        <link rel="stylesheet" href="./styles/style.css" />
         <title>DOM</title>
     </head>
     <body data-dark>
@@ -22,7 +22,8 @@
         </button>
         <aside class="panel" data-dark>
             <nav class="menu">
-                <a href="#section1" data-scroll-spy>Reloj Digital y Alarma Sonora</a
+                <a href="#section1" data-scroll-spy
+                    >Reloj Digital y Alarma Sonora</a
                 ><a href="#section2" data-scroll-spy>Eventos Teclado</a
                 ><a href="#section3" data-scroll-spy>Cuenta regresiva</a
                 ><a href="#section4" data-scroll-spy>Resposive con JavaScript</a
@@ -32,15 +33,24 @@
                     (User Agent)</a
                 ><a href="#section7" data-scroll-spy>Detección de conexión</a
                 ><a href="#section8" data-scroll-spy>Detección Webcam</a
-                ><a href="#section9" data-scroll-spy>Detecciòn Geolocalizaciòn</a
+                ><a href="#section9" data-scroll-spy
+                    >Detecciòn Geolocalizaciòn</a
                 ><a href="#section10" data-scroll-spy>Filtro de Busqueda</a
                 ><a href="#section11" data-scroll-spy>Selecciòn al azàr</a
                 ><a href="#section12" data-scroll-spy>Responsive Slider</a
-                ><a href="#section13" data-scroll-spy>Resposive Video</a><a href="#section14" data-scroll-spy>Validacion de formulario</a><a href="#section15" data-scroll-spy>Narrador</a>    
+                ><a href="#section13" data-scroll-spy>Resposive Video</a
+                ><a href="#section14" data-scroll-spy
+                    >Validacion de formulario</a
+                ><a href="#section15" data-scroll-spy>Narrador</a>
             </nav>
         </aside>
         <main>
-            <section id="section1" class="section" data-scroll-spy data-scroll-spy>
+            <section
+                id="section1"
+                class="section"
+                data-scroll-spy
+                data-scroll-spy
+            >
                 <h2>Time to Doom</h2>
                 <div id="reloj"></div>
                 <div id="reloj">
@@ -54,7 +64,7 @@
                 <h2>Moving Doom using dom</h2>
                 <!-- evento de teclado, pelota y stage -->
                 <article class="stage">
-                    <div class="ball"><img src="assets/face.png" alt=""></div>
+                    <div class="ball"><img src="assets/face.png" alt="" /></div>
                 </article>
             </section>
             <section id="section3" class="section" data-scroll-spy>
@@ -219,87 +229,122 @@
                 <h2>Obtener un lenguaje al azar</h2>
                 <button id="winner-btn">Obtener lenguaje</button>
                 <ul class="players cards">
-                    <li class="player"><figure class="card">
-                        <img
-                            src="assets/javascript.svg"
-                            alt="JavaScript"
-                        />
-                        <figcaption>JavaScript</figcaption></li>
-                    <li class="player"><figure class="card">
-                        <img
-                            src="assets/Python.png"
-                            alt="Python"
-                        />
-                        <figcaption>Python</figcaption></li>
-                    <li class="player"><figure class="card">
-                        <img
-                            src="assets/java.svg"
-                            alt="Java"
-                        />
-                        <figcaption>Java</figcaption></li>
-                    <li class="player"><figure class="card">
-                        <img
-                            src="assets/Go_Logo_Blue.svg"
-                            alt="Go"
-                        />
-                        <figcaption>Go</figcaption></li>
-                    <li class="player"><figure class="card">
-                        <img
-                            src="assets/Rust_programming_language_black_logo.svg"
-                            alt="Rust"
-                        />
-                        <figcaption>Rust</figcaption></li>
-                    <li class="player"><figure class="card">
-                        <img
-                            src="assets/perl.png"
-                            alt="Perl"
-                        />
-                        <figcaption>Perl</figcaption></li>
-                    <li class="player"><figure class="card">
-                        <img
-                            src="assets/PHP-logo.svg"
-                            alt="php"
-                        />
-                        <figcaption>PHP</figcaption></li>
-                    <li class="player"><figure class="card">
-                        <img
-                            src="assets/Ruby_logo.svg"
-                            alt="Ruby"
-                        />
-                        <figcaption>Ruby</figcaption></li>
-                    <li class="player"><figure class="card">
-                        <img
-                            src="assets/The_C_Programming_Language_logo.svg"
-                            alt="C"
-                        />
-                        <figcaption>C</figcaption></li>
-                    <li class="player"><figure class="card">
-                        <img
-                            src="assets/Fortran.png"
-                            alt="Fortran"
-                        />
-                        <figcaption>Fortran</figcaption></li>
-                    <li class="player"><figure class="card">
-                        <img src="assets/R_logo.svg" alt="R_logo">
-                        <figcaption>R</figcaption></li>
-                    
-                    <li class="player"><figure class="card">
-                        <img src="assets/Cplusplus_Logo.svg" alt="c++">
-                        <figcaption>C++</figcaption></li>
-                    
-                    <li class="player"><figure class="card">
-                        <img src="assets/Typescript_logo_2020.svg" alt="Typescript_logo_2020">
-                        <figcaption>TypeScript</figcaption></li>
-                        
-                    <li class="player"><figure class="card">
-                        <img src="assets/Gnu-bash-logo.svg" alt="Gnu-bash-logo">
-                        <figcaption>Bash</figcaption></li>
+                    <li class="player">
+                        <figure class="card">
+                            <img src="assets/javascript.svg" alt="JavaScript" />
+                            <figcaption>JavaScript</figcaption>
+                        </figure>
+                    </li>
+                    <li class="player">
+                        <figure class="card">
+                            <img src="assets/Python.png" alt="Python" />
+                            <figcaption>Python</figcaption>
+                        </figure>
+                    </li>
+                    <li class="player">
+                        <figure class="card">
+                            <img src="assets/java.svg" alt="Java" />
+                            <figcaption>Java</figcaption>
+                        </figure>
+                    </li>
+                    <li class="player">
+                        <figure class="card">
+                            <img src="assets/Go_Logo_Blue.svg" alt="Go" />
+                            <figcaption>Go</figcaption>
+                        </figure>
+                    </li>
+                    <li class="player">
+                        <figure class="card">
+                            <img
+                                src="assets/Rust_programming_language_black_logo.svg"
+                                alt="Rust"
+                            />
+                            <figcaption>Rust</figcaption>
+                        </figure>
+                    </li>
+                    <li class="player">
+                        <figure class="card">
+                            <img src="assets/perl.png" alt="Perl" />
+                            <figcaption>Perl</figcaption>
+                        </figure>
+                    </li>
+                    <li class="player">
+                        <figure class="card">
+                            <img src="assets/PHP-logo.svg" alt="php" />
+                            <figcaption>PHP</figcaption>
+                        </figure>
+                    </li>
+                    <li class="player">
+                        <figure class="card">
+                            <img src="assets/Ruby_logo.svg" alt="Ruby" />
+                            <figcaption>Ruby</figcaption>
+                        </figure>
+                    </li>
+                    <li class="player">
+                        <figure class="card">
+                            <img
+                                src="assets/The_C_Programming_Language_logo.svg"
+                                alt="C"
+                            />
+                            <figcaption>C</figcaption>
+                        </figure>
+                    </li>
+                    <li class="player">
+                        <figure class="card">
+                            <img src="assets/Fortran.png" alt="Fortran" />
+                            <figcaption>Fortran</figcaption>
+                        </figure>
+                    </li>
+                    <li class="player">
+                        <figure class="card">
+                            <img src="assets/R_logo.svg" alt="R_logo" />
+                            <figcaption>R</figcaption>
+                        </figure>
+                    </li>
 
-                    <li class="player"><figure class="card">
-                        <img src="assets/Swift_logo.svg" alt="Swift_logo">
-                        <figcaption>Swift</figcaption></li>
+                    <li class="player">
+                        <figure class="card">
+                            <img src="assets/Cplusplus_Logo.svg" alt="c++" />
+                            <figcaption>C++</figcaption>
+                        </figure>
+                    </li>
 
-                    <li class="player"><figure class="card"><img src="assets/Sql_database_shortcut_icon.png" alt="Sql_database_shortcut_icon"><figcaption>SQL</figcaption></li>
+                    <li class="player">
+                        <figure class="card">
+                            <img
+                                src="assets/Typescript_logo_2020.svg"
+                                alt="Typescript_logo_2020"
+                            />
+                            <figcaption>TypeScript</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="player">
+                        <figure class="card">
+                            <img
+                                src="assets/Gnu-bash-logo.svg"
+                                alt="Gnu-bash-logo"
+                            />
+                            <figcaption>Bash</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="player">
+                        <figure class="card">
+                            <img src="assets/Swift_logo.svg" alt="Swift_logo" />
+                            <figcaption>Swift</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="player">
+                        <figure class="card">
+                            <img
+                                src="assets/Sql_database_shortcut_icon.png"
+                                alt="Sql_database_shortcut_icon"
+                            />
+                            <figcaption>SQL</figcaption>
+                        </figure>
+                    </li>
                 </ul>
             </section>
             <section id="section12" class="section" data-scroll-spy>
@@ -307,32 +352,102 @@
                 <div class="slider">
                     <div class="slider-slides">
                         <div class="slider-slide">
-                            <img src="assets/photo1.jpg" alt="photo1">
-                            <figcaption><h3>title 1</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iste debitis maxime quisquam, ab voluptas, impedit quaerat tempore unde perspiciatis quia dolore deleniti enim officiis esse pariatur in illum. Animi?</p></figcaption>
+                            <img src="assets/photo1.jpg" alt="photo1" />
+                            <figcaption>
+                                <h3>title 1</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Repudiandae iste debitis
+                                    maxime quisquam, ab voluptas, impedit
+                                    quaerat tempore unde perspiciatis quia
+                                    dolore deleniti enim officiis esse pariatur
+                                    in illum. Animi?
+                                </p>
+                            </figcaption>
                         </div>
                         <div class="slider-slide">
-                            <img src="assets/photo2.jpg" alt="photo2">
-                            <figcaption><h3>title 2</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iste debitis maxime quisquam, ab voluptas, impedit quaerat tempore unde perspiciatis quia dolore deleniti enim officiis esse pariatur in illum. Animi?</p></figcaption>
+                            <img src="assets/photo2.jpg" alt="photo2" />
+                            <figcaption>
+                                <h3>title 2</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Repudiandae iste debitis
+                                    maxime quisquam, ab voluptas, impedit
+                                    quaerat tempore unde perspiciatis quia
+                                    dolore deleniti enim officiis esse pariatur
+                                    in illum. Animi?
+                                </p>
+                            </figcaption>
                         </div>
                         <div class="slider-slide">
-                            <img src="assets/photo3.jpg" alt="photo3">
-                            <figcaption><h3>title 3</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iste debitis maxime quisquam, ab voluptas, impedit quaerat tempore unde perspiciatis quia dolore deleniti enim officiis esse pariatur in illum. Animi?</p></figcaption>
+                            <img src="assets/photo3.jpg" alt="photo3" />
+                            <figcaption>
+                                <h3>title 3</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Repudiandae iste debitis
+                                    maxime quisquam, ab voluptas, impedit
+                                    quaerat tempore unde perspiciatis quia
+                                    dolore deleniti enim officiis esse pariatur
+                                    in illum. Animi?
+                                </p>
+                            </figcaption>
                         </div>
                         <div class="slider-slide">
-                            <img src="assets/photo4.jpg" alt="photo4">
-                            <figcaption><h3>title 4</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iste debitis maxime quisquam, ab voluptas, impedit quaerat tempore unde perspiciatis quia dolore deleniti enim officiis esse pariatur in illum. Animi?</p></figcaption>
+                            <img src="assets/photo4.jpg" alt="photo4" />
+                            <figcaption>
+                                <h3>title 4</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Repudiandae iste debitis
+                                    maxime quisquam, ab voluptas, impedit
+                                    quaerat tempore unde perspiciatis quia
+                                    dolore deleniti enim officiis esse pariatur
+                                    in illum. Animi?
+                                </p>
+                            </figcaption>
                         </div>
                         <div class="slider-slide active">
-                            <img src="assets/photo5.jpg" alt="photo5">
-                            <figcaption><h3>title 5</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iste debitis maxime quisquam, ab voluptas, impedit quaerat tempore unde perspiciatis quia dolore deleniti enim officiis esse pariatur in illum. Animi?</p></figcaption>
+                            <img src="assets/photo5.jpg" alt="photo5" />
+                            <figcaption>
+                                <h3>title 5</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Repudiandae iste debitis
+                                    maxime quisquam, ab voluptas, impedit
+                                    quaerat tempore unde perspiciatis quia
+                                    dolore deleniti enim officiis esse pariatur
+                                    in illum. Animi?
+                                </p>
+                            </figcaption>
                         </div>
                         <div class="slider-slide">
-                            <img src="assets/photo6.jpg" alt="photo6">
-                            <figcaption><h3>title 6</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iste debitis maxime quisquam, ab voluptas, impedit quaerat tempore unde perspiciatis quia dolore deleniti enim officiis esse pariatur in illum. Animi?</p></figcaption>
+                            <img src="assets/photo6.jpg" alt="photo6" />
+                            <figcaption>
+                                <h3>title 6</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Repudiandae iste debitis
+                                    maxime quisquam, ab voluptas, impedit
+                                    quaerat tempore unde perspiciatis quia
+                                    dolore deleniti enim officiis esse pariatur
+                                    in illum. Animi?
+                                </p>
+                            </figcaption>
                         </div>
                         <div class="slider-slide">
-                            <img src="assets/photo7.jpg" alt="photo7">
-                            <figcaption><h3>title 7</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iste debitis maxime quisquam, ab voluptas, impedit quaerat tempore unde perspiciatis quia dolore deleniti enim officiis esse pariatur in illum. Animi?</p></figcaption>
+                            <img src="assets/photo7.jpg" alt="photo7" />
+                            <figcaption>
+                                <h3>title 7</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Repudiandae iste debitis
+                                    maxime quisquam, ab voluptas, impedit
+                                    quaerat tempore unde perspiciatis quia
+                                    dolore deleniti enim officiis esse pariatur
+                                    in illum. Animi?
+                                </p>
+                            </figcaption>
                         </div>
                     </div>
                     <div class="slider-btns">
@@ -342,25 +457,70 @@
                 </div>
             </section>
             <section id="section13" class="section" data-scroll-spy>
-                <h2>j a r   j a r   j r - treasure maps</h2>
-                <video src="assets/mfdoomvideo.mp4" muted controls loop data-smart-video></video>
+                <h2>j a r j a r j r - treasure maps</h2>
+                <video
+                    src="assets/mfdoomvideo.mp4"
+                    muted
+                    controls
+                    loop
+                    data-smart-video
+                ></video>
                 <article class="neon-word">
                     <h2 class="neon-text-editable">MF DOOM</h2>
                 </article>
                 <h2>GG DOOM (GRIP GRAND X MF DOOM) -- "Jive Turkeys"</h2>
-                <video src="assets/mfdoomvideo2.mp4" muted controls loop data-smart-video></video>
+                <video
+                    src="assets/mfdoomvideo2.mp4"
+                    muted
+                    controls
+                    loop
+                    data-smart-video
+                ></video>
             </section>
             <section id="section14" class="section" data-scroll-spy>
                 <h2>Validación de formulario</h2>
-                <form class="contact-form" action="https://formsubmit.co/efra.rlz@gmail.com" method="POST" target="_blank">
+                <form
+                    class="contact-form"
+                    action="https://formsubmit.co/efra.rlz@gmail.com"
+                    method="POST"
+                    target="_blank"
+                >
                     <legend>Envíanos tus comentarios</legend>
-                    <input type="text" name="name" placeholder="Escribe tu nombre" title="El nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]{1,50}$" required>
-                    <input type="email" required placeholder="Escribe tu email" name="email" title="Email incorrecto" pattern="^[A-Za-z0-9]+(\.[A-Za-z0-9]+|-[A-Za-z0-9]+|_[A-Za-z0-9]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*(\.[A-Za-z]{2,15})$">
-                    <input type="text" name="subject" placeholder="Asunto a tratar" title="Escribe el asunto a tratar" required>
-                    <textarea name="comments" cols="50" rows="5" placeholder="Escribe tus comentarios" data-pattern="^(\n|.){1,255}$" title="Tu comentario no debe exceder los 255 caracteres" required></textarea>
-                    <input type="submit" value="enviar">
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Escribe tu nombre"
+                        title="El nombre solo acepta letras y espacios en blanco"
+                        pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]{1,50}$"
+                        required
+                    />
+                    <input
+                        type="email"
+                        required
+                        placeholder="Escribe tu email"
+                        name="email"
+                        title="Email incorrecto"
+                        pattern="^[A-Za-z0-9]+(\.[A-Za-z0-9]+|-[A-Za-z0-9]+|_[A-Za-z0-9]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*(\.[A-Za-z]{2,15})$"
+                    />
+                    <input
+                        type="text"
+                        name="subject"
+                        placeholder="Asunto a tratar"
+                        title="Escribe el asunto a tratar"
+                        required
+                    />
+                    <textarea
+                        name="comments"
+                        cols="50"
+                        rows="5"
+                        placeholder="Escribe tus comentarios"
+                        data-pattern="^(\n|.){1,255}$"
+                        title="Tu comentario no debe exceder los 255 caracteres"
+                        required
+                    ></textarea>
+                    <input type="submit" value="enviar" />
                     <div class="contact-form-loader none">
-                        <img src="assets/loader.svg" alt="cargando">
+                        <img src="assets/loader.svg" alt="cargando" />
                     </div>
                     <div class="contact-form-response none">
                         <p>Los datos se han enviado</p>
@@ -371,8 +531,14 @@
                 <h2>Narrador</h2>
                 <select id="speech-select">
                     <option value="">----Elige una voz----</option>
-                    <br><br>
-                    <textarea name="" id="speech-text" cols="50" rows="5" placeholder="Ingresa el texto para leerlo"></textarea>
+                    <br /><br />
+                    <textarea
+                        name=""
+                        id="speech-text"
+                        cols="50"
+                        rows="5"
+                        placeholder="Ingresa el texto para leerlo"
+                    ></textarea>
                     <button id="speech-btn">Leer texto</button>
                 </select>
             </section>
